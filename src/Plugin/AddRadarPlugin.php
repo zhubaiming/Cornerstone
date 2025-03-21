@@ -8,7 +8,7 @@ use Zhubaiming\Cornerstone\Contract\PluginInterface;
 use Zhubaiming\Cornerstone\Patchwerk;
 
 /**
- * 装载雷达
+ * 装载雷达插件
  *
  * 作用: 向 Patchwerk 中设置雷达(即: 请求类)，以及雷达的各项请求属性，以方便后续直接调用请求
  */
