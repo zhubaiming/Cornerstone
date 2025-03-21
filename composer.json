@@ -3,6 +3,7 @@
   "description": "奠基石，实现PSR标准",
   "type": "library",
   "license": "MIT",
+  "version": "0.1.1-dev",
   "minimum-stability": "dev",
   "authors": [
     {
