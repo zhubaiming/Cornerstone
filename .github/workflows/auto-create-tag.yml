@@ -38,6 +38,6 @@ jobs:
       - name: 使用版本号打标记
         if: env.SKIP == 'false'
         run: |
-          git tag ${{ env.VERSION }}
+          git tag -a ${{ env.VERSION }}
           git push origin ${{ env.VERSION }}
           echo -e "\033[32m标记 Tag ${{ env.VERSION }} 成功\033[0m"
