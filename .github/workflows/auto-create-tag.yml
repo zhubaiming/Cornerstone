@@ -35,9 +35,14 @@ jobs:
             echo "SKIP=false" >> $GITHUB_ENV
           fi
 
+      - name: 设置 Git 用户信息
+        run: |
+          git config --global user.email "hub.zhubaiming@gmail.com"
+          git config --global user.name "zhubaiming"
+
       - name: 使用版本号打标记
         if: env.SKIP == 'false'
         run: |
-          git tag -a ${{ env.VERSION }}
-          git push tag ${{ env.VERSION }}
+          git tag -a ${{ env.VERSION }} -m "Release ${{ env.VERSION }}"
+          git push origin ${{ env.VERSION }}
           echo -e "\033[32m标记 Tag ${{ env.VERSION }} 成功\033[0m"
