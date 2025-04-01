@@ -3,7 +3,7 @@
   "description": "奠基石，实现PSR标准",
   "type": "library",
   "license": "MIT",
-  "version": "0.1.1-dev",
+  "version": "0.1.2",
   "minimum-stability": "dev",
   "authors": [
     {
@@ -23,7 +23,10 @@
   "autoload": {
     "psr-4": {
       "Zhubaiming\\Cornerstone\\": "src/"
-    }
+    },
+    "files": [
+      "src/Functions.php"
+    ]
   },
   "autoload-dev": {
     "psr-4": {
