@@ -39,5 +39,5 @@ jobs:
         if: env.SKIP == 'false'
         run: |
           git tag -a ${{ env.VERSION }}
-          git push origin ${{ env.VERSION }}
+          git push tag ${{ env.VERSION }}
           echo -e "\033[32m标记 Tag ${{ env.VERSION }} 成功\033[0m"
